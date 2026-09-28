@@ -1,6 +1,8 @@
 # LLM Forensics
 
-Independent, measurement-based fingerprinting of anonymous / stealth / code-named LLM endpoints.
+Independent, measurement-based fingerprinting of LLM endpoints — identifying anonymous / stealth /
+code-named models, **and** verifying that known, named models are actually what is being served
+(catching model-card mismatches, swaps, or wrapper substitutions).
 
 Each case folder documents one model (or code name, when the listing is a stealth release): what was
 measured against the **live endpoint only**, which family the evidence points to, and what remains
