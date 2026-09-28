@@ -1,4 +1,4 @@
-# LLM Fingerprints
+# LLM Forensics
 
 Independent, measurement-based fingerprinting of anonymous / stealth / code-named LLM endpoints.
 
