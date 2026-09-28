@@ -1,0 +1,23 @@
+{
+  "model": "stealth/space-bunny-alpha",
+  "provider": "openrouter",
+  "measured": ["2026-09-27", "2026-09-28"],
+  "verdicts": [
+    {"layer": "tokenizer_vocab", "finding": "MiniMax-family: matches MiniMaxAI/MiniMax-Text-01 within one constant framing token across CJK/code/mixed/English corpora; reproduced twice", "confidence": "high_family_level"},
+    {"layer": "wrapper", "finding": "Stable stealth template with fixed prompt-prefix/cache signature", "confidence": "high"},
+    {"layer": "context", "finding": "1M-class declared context; practical ceiling lower due to gateway pre-gate", "confidence": "high"},
+    {"layer": "vision", "finding": "Resolution-constant prompt-token overhead (adapter-class image handling)", "confidence": "high_behavior"},
+    {"layer": "reasoning", "finding": "Mandatory reasoning surface; usage reasoning_tokens=0 while reasoning text present", "confidence": "high"},
+    {"layer": "identity", "finding": "Strong default identity prior with clean override semantics; rank-blind to system/user role placement; self-reports not provenance", "confidence": "high_behavior_not_provenance"},
+    {"layer": "knowledge", "finding": "Correctly dates 2025-2026 events despite older self-claimed cutoff", "confidence": "high"},
+    {"layer": "serving_stack", "finding": "OpenAI-compatible shape; logprobs field present but always null", "confidence": "high"},
+    {"layer": "safety_injection", "finding": "Direct overrides mostly refused; partial embedded-content instruction-hierarchy weakness", "confidence": "medium_high"}
+  ],
+  "unproven": [
+    "exact_checkpoint_identity",
+    "official_lab_provenance",
+    "full_system_developer_prompt_body",
+    "quantization_status",
+    "per_behavior_upstream_vs_wrapper_attribution"
+  ]
+}

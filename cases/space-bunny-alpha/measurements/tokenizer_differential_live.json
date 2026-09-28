@@ -1,0 +1,41 @@
+{
+  "texts_chars": {
+    "baseline_1char": 1,
+    "cjk_2k": 2000,
+    "code_12k": 12000,
+    "mixed_6k": 6000,
+    "en_16k": 16000
+  },
+  "results": {
+    "baseline_1char": {
+      "chars": 1,
+      "prompt_tokens": 157,
+      "completion_tokens": 1,
+      "total_tokens": 158
+    },
+    "cjk_2k": {
+      "chars": 2000,
+      "prompt_tokens": 1155,
+      "completion_tokens": 1,
+      "total_tokens": 1156
+    },
+    "code_12k": {
+      "chars": 12000,
+      "prompt_tokens": 3470,
+      "completion_tokens": 1,
+      "total_tokens": 3471
+    },
+    "mixed_6k": {
+      "chars": 6000,
+      "prompt_tokens": 2582,
+      "completion_tokens": 1,
+      "total_tokens": 2583
+    },
+    "en_16k": {
+      "chars": 16000,
+      "prompt_tokens": 2450,
+      "completion_tokens": 1,
+      "total_tokens": 2451
+    }
+  }
+}

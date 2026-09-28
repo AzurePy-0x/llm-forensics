@@ -1,0 +1,21 @@
+# secrets & session data — never commit
+*.env
+.env.*
+*.har
+*.har.json
+auth.json
+tokens.json
+
+# raw transcripts / run logs (may contain prompts or responses)
+*_transcript.jsonl
+*.log
+
+# local paths & caches
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# OS junk
+.DS_Store
+Thumbs.db
